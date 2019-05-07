@@ -1,0 +1,131 @@
+{
+  "id": "3d5beff7-0ee4-4514-89d6-949da33bec25",
+  "version": "2.0",
+  "name": "DemoOpenCart002",
+  "url": "https://demo.opencart.com",
+  "tests": [{
+    "id": "d1d87f57-6cf3-4f02-acbc-540276758789",
+    "name": "DemoOpenCart0020",
+    "commands": [{
+      "id": "04b1f766-0f67-4602-933a-2952300686da",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8e4aa88-6efd-45f6-a79b-e29cbe454064",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1000x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "711c5a56-1df5-4809-981d-c86312b93f2e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-user",
+      "targets": [
+        ["css=.fa-user", "css:finder"],
+        ["xpath=//div[@id='top-links']/ul/li[2]/a/i", "xpath:idRelative"],
+        ["xpath=//li[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1efe0f86-b704-418c-86ba-1d1dd0a8e65b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.dropdown-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='top-links']/ul/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=account/login')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54d57f5f-c5a8-4e4f-bd7d-32ab24788096",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "173aba12-b412-47e2-9ef6-77c6378d4936",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "fdgdfg"
+    }, {
+      "id": "ce927ddc-143a-4582-8f77-1eda3cc54d1f",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6de8298c-090c-4310-b20b-dac89807d1ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div[2]/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "dfgdfgdfg"
+    }, {
+      "id": "05817d1f-bef6-43cb-bdfb-5bd2677e8860",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b14791c7-ac64-4df3-88d6-cc8987fb5a5b",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "css=.alert",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ebd2dc7c-8061-4484-86db-10ba64fdc8da",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d1d87f57-6cf3-4f02-acbc-540276758789"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}
